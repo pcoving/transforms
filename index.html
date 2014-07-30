@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>Linear Transformation</title>
+  <script src="jquery-2.1.1.min.js"></script>
+  <script src="jquery-ui.min.js"></script>
+  <script src="transform.js"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript"
+	  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <link rel="stylesheet" href="jquery-ui.css">
+  <style type="text/css">
+    #image {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0px;
+    height: 200px;
+    width: 300px;
+    background-image: url(turtle.jpg);
+    border: 1px solid #000;
+    }
+
+    #a_slider, #b_slider, #c_slider, #d_slider, #e_slider, #f_slider {
+    width: 80%;
+    }
+
+    #eqn {   
+    font-size: 20px;
+    text-align: center;
+    }
+    #reset {
+    margin-top: 50px;
+    }
+  </style>
+ </head>
+ <body>
+   <div id="image"></div>
+   
+   <div id="eqn"></div>
+
+   <button id="reset">reset</button>
+
+   <p>a: <span id="a">0</span>
+     <div id="a_slider"></div>
+   </p>
+   <p>b: <span id="b">0</span>
+     <div id="b_slider"></div>
+   </p>
+   <p>c: <span id="c">0</span>
+     <div id="c_slider"></div>
+   </p>
+   <p>d: <span id="d">0</span>
+     <div id="d_slider"></div>
+   </p>
+   <p>e: <span id="e">0</span>
+     <div id="e_slider"></div>
+   </p>
+   <p>f: <span id="f">0</span>
+     <div id="f_slider"></div>
+   </p>
+ </body>
+</html>
